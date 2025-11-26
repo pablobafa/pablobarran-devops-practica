@@ -1,0 +1,25 @@
+# Git
+.git
+.gitignore
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Entornos virtuales
+.venv/
+venv/
+
+# Editor / IDE
+.vscode/
+.idea/
+
+# Builds y artefactos
+dist/
+build/
+*.egg-info/
+
+# Logs
+*.log
