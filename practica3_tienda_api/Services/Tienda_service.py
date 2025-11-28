@@ -29,6 +29,13 @@ class TiendaService:  #Servicio principal de la tienda online
         
         return self._usuarios.get(usuario_id)
 
+    def listar_usuarios(self):
+        """
+        Devuelve una lista con todos los usuarios registrados.
+        """
+        return list(self._usuarios.values())
+
+
     #Productos
     def anadir_producto_electronico(self, nombre, precio, stock, garantia_meses):   #Crea y almacena un ProductoElectronico
        
