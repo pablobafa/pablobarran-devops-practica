@@ -37,6 +37,15 @@ class TiendaService:  #Servicio principal de la tienda online
 
 
     #Productos
+
+    def anadir_producto_generico(self, nombre, precio, stock):
+        """
+        Crea y almacena un Producto genérico.
+        """
+        p = Producto(nombre, precio, stock)
+        self._productos[p.id] = p
+        return p
+
     def anadir_producto_electronico(self, nombre, precio, stock, garantia_meses):   #Crea y almacena un ProductoElectronico
        
         p = ProductoElectronico(nombre, precio, stock, garantia_meses)
